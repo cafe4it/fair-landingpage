@@ -1,0 +1,220 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    font-family: "Time News Roman";
+    padding-top: 41px;
+    font-size: 20px;
+    margin: 0;
+}
+
+body > button {
+    color : white;
+}
+
+button:hover{
+    color : white;
+}
+.img-center {margin:0 auto;}
+
+.navbar-custom {
+    background-color: #24982b;
+    min-height: 41px;
+}
+
+.navbar-custom .navbar-nav > li > a, .navbar-brand {
+    text-transform: uppercase !important;
+    font-weight: bolder;
+    color: white !important;
+    line-height: 41px;
+    height: 41px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+#top-page {
+    height: 147px;
+    min-height: 147px;
+    background: transparent url("/images/toppage-bg.png") repeat-x;
+}
+
+.top-header, .top-subheader {
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.top-header {
+    color: #24982b;
+    font-size: 55px;
+}
+
+.top-subheader {
+    color: #fe3c00;
+    fond-size: 40px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+}
+
+#heropage {
+    margin-top: 5px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    font-weight: bolder;
+    text-justify: auto;
+}
+
+#heropage span.city {
+    font-size: 24px;
+    color: #fe3c00;
+}
+
+.btn-register {
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    font-size: 34px;
+    background-color: #ff7200;
+    -webkit-box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+    -moz-box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+    box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+    border-radius: 7px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+}
+
+#heropage .btn-register {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#du-hoc-sinh .studystudent-header{
+    min-height: 65px;
+    background-color: #fe3c00;
+}
+
+#du-hoc-sinh .studystudent-header h1{
+    font-size: 33px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+
+#du-hoc-sinh .studystutents-feeling{
+    min-height: 410px;
+    background-color: #24982b;
+    padding-top: 15px;
+}
+
+#du-hoc-sinh .studystutents-feeling img{
+    padding-top : 10px;
+}
+
+#du-hoc-sinh .studystutents-feeling h1{
+    text-transform: uppercase;
+    color : white;
+    font-size : 23px;
+}
+
+#du-hoc-sinh .studystutents-feeling p{
+    color : white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#co-hoi-tai-trien-lam{
+    background-color: #fe3c00;
+    padding-bottom: 30px;
+}
+
+#co-hoi-tai-trien-lam h1{
+    font-size: 33px;
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+#co-hoi-tai-trien-lam p{
+    text-align: left;
+    font-size: 26px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#qua-tang .p1{
+    background-color: #24982b;
+}
+
+#qua-tang .p1 h1{
+    font-size: 44px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+#qua-tang .p2 .img-gift{
+    padding-top: 20px;
+    width : 200px;
+}
+
+#qua-tang .p2 p{
+    border-top: #061f5c double 1px;
+    font-size: 21px;
+    font-weight: bolder;
+    color : #061f5c;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#dien-gia-tai-trien-lam .p1{
+    background-color: #fe3c00;
+}
+
+#dien-gia-tai-trien-lam .p1 h1{
+    font-size: 33px;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+}
+
+#dien-gia-tai-trien-lam .p2{
+    background-color: #24982b;
+}
+
+#dien-gia-tai-trien-lam .p2 .img-talking{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#dien-gia-tai-trien-lam .p2 p.talking{
+    font-size: 25px;
+    color : white;
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+
+#dien-gia-tai-trien-lam .p2 p.talking-info{
+    font-size: 21px;
+    color : white;
+}
+
+#dien-gia-tai-trien-lam button{
+    margin-bottom: 30px;
+}
+
+#page-bottom h1{
+    font-size: 37px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color : #fe3c00;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#page-bottom p{
+    margin-bottom: 50px;
+}
