@@ -1,5 +1,9 @@
 Home = React.createClass({
     displayName : 'Home',
+    clickRegister(e){
+        e.preventDefault();
+        console.log(e);
+    },
     render(){
         var navbar = <Navbar/>,
             toppage = <TopPage/>,
@@ -21,8 +25,8 @@ Home = React.createClass({
                 {talking}
                 {pagebottom}
             </div>
-
-
+            <ModalDialog/>
+            <GoogleTag type="remarketing" id="1017172282"/>
         </div>
     )
 }
@@ -46,17 +50,24 @@ Navbar = React.createClass({
                 </div>
                 <div id="navbar" className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
-                        <li><a href="#top-page">Trang chủ</a></li>
-                        <li><a href="#du-hoc-sinh">Du học sinh</a></li>
-                        <li><a href="#co-hoi-trien-lam">Cơ hội triển lãm</a></li>
-                        <li><a href="#qua-tang">Quà tặng</a></li>
-                        <li><a href="#dien-gia-tai-trien-lam">Diễn giả tại triển lãm</a></li>
+                        <li role="navigation"><a href="#" data-target="top-page">Trang chủ</a></li>
+                        <li role="navigation"><a href="#" data-target="du-hoc-sinh">Du học sinh</a></li>
+                        <li role="navigation"><a href="#" data-target="co-hoi-tai-trien-lam">Cơ hội triển lãm</a></li>
+                        <li role="navigation"><a href="#" data-target="qua-tang">Quà tặng</a></li>
+                        <li role="navigation"><a href="#" data-target="dien-gia-tai-trien-lam">Diễn giả tại triển lãm</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     }
 });
+
+ButtonRegister = React.createClass({
+    displayName : 'Button',
+    render(){
+        return <button className="btn btn-register" data-toggle="modal" data-target="#dlg">Đăng ký ngay</button>
+    }
+})
 
 TopPage = React.createClass({
     displayName : 'TopPage',
@@ -105,7 +116,7 @@ HeroPage = React.createClass({
                                 9h - 12 Chủ nhật, ngày 04/10 tại khách sạn Liberty Central Saigon, 59-61 Pastuer Quận 1
                             </p>
                             <p>
-                                <button className="btn btn-register">Đăng ký ngay</button>
+                                <ButtonRegister/>
                             </p>
                         </div>
                     </div>
@@ -234,7 +245,7 @@ Talking = React.createClass({
                         <div className="row">
                             <div className="col-lg-12 col-md-12 col-xs-12">
                                 <div className="text-center">
-                                    <button className="btn btn-register btn-lg">Đăng ký ngay</button>
+                                    <ButtonRegister/>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +264,34 @@ PageBottom = React.createClass({
                 <div className="container text-center">
                     <h1>Chúng tôi chờ đón bạn tại triển lãm</h1>
                     <img src="/images/logo-schools.png" alt="Logo Schools" className="img-responsive img-center"/>
-                    <p><button className="btn btn-register btn-lg">Đăng Ký Ngay</button></p>
+                    <p><ButtonRegister/></p>
+                </div>
+            </div>
+        )
+    }
+})
+
+ModalDialog = React.createClass({
+    displayName : 'Modal',
+    render(){
+        return (
+            <div className="modal fade" ref="dlg" id="dlg">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 className="modal-title">Đăng ký thông tin</h4>
+                        </div>
+                        <div className="modal-body">
+                            <div className="row">
+
+                            </div>
+                        </div>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-default" data-dismiss="modal">Đóng</button>
+                            <button type="button" className="btn btn-primary">Đăng ký</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

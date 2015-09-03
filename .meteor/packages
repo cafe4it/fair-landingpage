@@ -5,10 +5,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 kadira:flow-router-ssr
 kadira:react-layout
 react
 twbs:bootstrap
 kadira:dochead
+meteorhacks:fast-render
