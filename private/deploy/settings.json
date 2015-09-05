@@ -1,5 +1,7 @@
 {
   "public": {
-
+    "mixpanel": {
+      "token": "cc914ecdc192d81f6a03e7eb9393e262"
+    }
   }
 }

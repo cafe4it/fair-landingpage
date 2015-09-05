@@ -5,9 +5,14 @@
 # but you can also edit it by hand.
 
 meteor-platform
-kadira:flow-router-ssr
 kadira:react-layout
 react
 twbs:bootstrap
 kadira:dochead
 meteorhacks:fast-render
+momentjs:moment
+ostrio:cookies
+tomwasd:history-polyfill
+kadira:flow-router
+meteorhacks:cluster
+yogiben:mixpanel

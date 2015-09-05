@@ -1,5 +1,5 @@
 GoogleTag = React.createClass({
-    displayName : 'GoogleConversionTag',
+    displayName : 'GoogleTag',
     render(){
         var src = '';
         if(this.props.type === 'conversion'){
