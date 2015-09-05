@@ -372,7 +372,7 @@ ModalDialog = React.createClass({
                         if (rs) {
                             Meteor.cookie.set('fair_registered', true);
                             Session.set('done_register', true);
-                            mixpanel.track('Submitted Form')
+                            analytics.track('Submitted Form')
                             $('button[class="close"]').click();
                         }
                     })
@@ -382,7 +382,7 @@ ModalDialog = React.createClass({
         });
 
         $('#dlg').on('shown.bs.modal', function(){
-            mixpanel.track('Open Form');
+            analytics.track('Open Form');
         })
 
         $('#dlg').on('hidden.bs.modal', function () {
@@ -393,7 +393,7 @@ ModalDialog = React.createClass({
             $('.slt-multi').multiselect('deselectAll', true);
             self.setState({selectedCountries: [], selectedKnows: []});
             if(Session.get('done_register') === false){
-                mixpanel.track('Close, not submit form');
+                analytics.track('Close, not submit form');
             }
         })
     },

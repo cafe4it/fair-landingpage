@@ -1,20 +1,20 @@
 FlowRouter.route('/',{
     name : 'home',
-    triggersEnter: [function(){
-        mixpanel.track('Home page')
-    }],
+    triggersEnter: [trackRouteEntry],
     action : function(p, q){
         ReactLayout.render(Home)
     }
 });
 
 FlowRouter.route('/thank-you',{
-    triggersEnter: [function(){
-        mixpanel.track('ThankYou page')
-    }],
+    triggersEnter: [trackRouteEntry],
     name : 'thankyou',
     action : function(p, q){
         ReactLayout.render(ThankYou);
     }
 });
+
+function trackRouteEntry(context){
+    analytics.page(context.route.name);
+}
 

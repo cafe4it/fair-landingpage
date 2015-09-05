@@ -1,6 +1,5 @@
 if(Meteor.isServer) {
     //FlowRouter.setDeferScriptLoading(true);
-
     Meteor.methods({
         registerFair : function(obj){
             try{

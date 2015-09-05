@@ -15,4 +15,4 @@ ostrio:cookies
 tomwasd:history-polyfill
 kadira:flow-router
 meteorhacks:cluster
-yogiben:mixpanel
+percolatestudio:segment.io@=1.1.1_1

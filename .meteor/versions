@@ -45,6 +45,7 @@ mongo@1.1.0
 observe-sequence@1.0.6
 ordered-dict@1.0.3
 ostrio:cookies@1.0.1
+percolatestudio:segment.io@1.1.1_1
 random@1.0.3
 react@0.1.10
 react-meteor-data@0.1.6
@@ -69,4 +70,3 @@ underscore@1.0.3
 url@1.0.4
 webapp@1.2.0
 webapp-hashing@1.0.3
-yogiben:mixpanel@0.0.7
