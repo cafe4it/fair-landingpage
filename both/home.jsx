@@ -372,7 +372,11 @@ ModalDialog = React.createClass({
                         if (rs) {
                             Meteor.cookie.set('fair_registered', true);
                             Session.set('done_register', true);
-                            analytics.track('Submitted Form')
+                            analytics.track('Submitted Form',{
+                                fullname : obj.Hovaten,
+                                email : obj.Email,
+                                phone : obj.Sodienthoai
+                            })
                             $('button[class="close"]').click();
                         }
                     })
