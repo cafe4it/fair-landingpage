@@ -8,7 +8,7 @@ $(document).ready(function(){
         $(this).parent().addClass('active');
         var target = "#" + this.getAttribute('data-target');
         $('html, body').animate({
-            scrollTop: ($(target).offset().top - 30)
+            scrollTop: ($(target).offset().top - 70)
         }, 1000);
     });
 });

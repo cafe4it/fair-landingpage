@@ -15,7 +15,7 @@ if(Meteor.isClient){
             setTimeout(function(){
                 Session.set('done_register',false);
                 FlowRouter.go('thankyou');
-            },1000)
+            },500)
         }
     })
 }

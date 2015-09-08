@@ -1,6 +1,6 @@
 body {
     font-family: TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
-    padding-top: 41px;
+    padding-top: 73px;
     font-size: 20px;
     margin: 0;
     position: relative;
@@ -38,13 +38,14 @@ body > button {
 }
 
 button:hover{
-    color : white;
+    color : #eeeeee !important;
 }
 .img-center {margin:0 auto;}
 
 .navbar-custom {
-    background-color: #24982b;
-    min-height: 41px;
+    background-color: #eb6601;
+    min-height: 73px;
+    padding-top: 5px;
 }
 
 .navbar-custom .navbar-nav > li > a, .navbar-brand {
@@ -52,35 +53,41 @@ button:hover{
     font-weight: bolder;
     color: white !important;
     line-height: 41px;
-    height: 41px;
-    padding-top: 5px;
+    height: 73px;
     font-size: 14px;
 }
 
 .navbar-custom .navbar-nav > .active > a{
     background-color: inherit !important;
-    color: #061f5c !important;
+    color: #24982b !important;
+}
+
+.navbar-custom .divider-vertical {
+    height: 30px;
+    margin: 20px 0px;
+    border-right: 1px solid #ffffff;
 }
 
 #top-page {
     height: 147px;
     min-height: 147px;
-    background: transparent url("/images/toppage-bg.png") repeat-x;
+    background-color: #f0f0f0;
 }
 
 .top-header, .top-subheader {
     text-transform: uppercase;
-    font-weight: bolder;
 }
 
 .top-header {
-    color: #24982b;
+    color: #77a101;
+    font-weight: bolder;
     font-size: 55px;
 }
 
 .top-subheader {
-    color: #fe3c00;
-    fond-size: 40px;
+    color: #eb6601;
+    font-size: 40px;
+    font-weight: 300 !important;
     margin-top: 4px;
     margin-bottom: 0px;
 }
@@ -95,7 +102,7 @@ button:hover{
 
 #heropage span.city {
     font-size: 24px;
-    color: #fe3c00;
+    color: #eb6601;
 }
 
 .btn-register {
@@ -104,7 +111,22 @@ button:hover{
     font-weight: bolder;
     color: white;
     font-size: 34px;
-    background-color: #ff7200;
+    background-color: #eb6601;
+    -webkit-box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+    -moz-box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+    box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
+    border-radius: 7px;
+    padding-top: 3px;
+    padding-bottom: 0px;
+}
+
+.btn-register2 {
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    font-size: 24px;
+    background-color: #77a101;
     -webkit-box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
     -moz-box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
     box-shadow: 2px 3px 0px rgba(4, 4, 4, 0.3);
@@ -120,7 +142,7 @@ button:hover{
 
 #du-hoc-sinh .studystudent-header{
     min-height: 65px;
-    background-color: #fe3c00;
+    background-color: #eb6601;
 }
 
 #du-hoc-sinh .studystudent-header h1{
@@ -132,7 +154,7 @@ button:hover{
 
 #du-hoc-sinh .studystutents-feeling{
     min-height: 410px;
-    background-color: #24982b;
+    background-color: #fff;
     padding-top: 15px;
 }
 
@@ -142,18 +164,18 @@ button:hover{
 
 #du-hoc-sinh .studystutents-feeling h1{
     text-transform: uppercase;
-    color : white;
+    font-weight: bolder;
+    color : black;
     font-size : 23px;
 }
 
 #du-hoc-sinh .studystutents-feeling p{
-    color : white;
-    font-weight: bold;
+    color : black;
     font-size: 18px;
 }
 
 #co-hoi-tai-trien-lam{
-    background-color: #fe3c00;
+    background-color: #eb6601;
     padding-bottom: 30px;
 }
 
@@ -174,7 +196,7 @@ button:hover{
 }
 
 #qua-tang .p1{
-    background-color: #24982b;
+    background-color: #77a101;
 }
 
 #qua-tang .p1 h1{
@@ -200,7 +222,7 @@ button:hover{
 }
 
 #dien-gia-tai-trien-lam .p1{
-    background-color: #fe3c00;
+    background-color: #eb6601;
 }
 
 #dien-gia-tai-trien-lam .p1 h1{
@@ -211,7 +233,7 @@ button:hover{
 }
 
 #dien-gia-tai-trien-lam .p2{
-    background-color: #24982b;
+    background-color: #eeeeee;
 }
 
 #dien-gia-tai-trien-lam .p2 .img-talking{
@@ -221,14 +243,14 @@ button:hover{
 
 #dien-gia-tai-trien-lam .p2 p.talking{
     font-size: 25px;
-    color : white;
+    color : #77a101;
     margin-bottom: 10px;
     font-weight: bolder;
 }
 
 #dien-gia-tai-trien-lam .p2 p.talking-info{
     font-size: 21px;
-    color : white;
+    color : black;
 }
 
 #dien-gia-tai-trien-lam button{
@@ -246,4 +268,21 @@ button:hover{
 
 #page-bottom p{
     margin-bottom: 50px;
+}
+
+.scroll-page{
+    position: fixed;
+    height: 159px;
+    width: 52px;
+    z-index: 999999;
+    right: 0;
+    top: 60%;
+    background: url("images/btn-register.png")
+}
+
+.scroll-page a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
 }

@@ -15,11 +15,14 @@ Home = React.createClass({
                     {navbar}
                     {toppage}
                     {heropage}
-                    {studystudents}
                     {chancestudy}
                     {giftstudy}
                     {talking}
+                    {studystudents}
                     {pagebottom}
+                </div>
+                <div className="scroll-page">
+                    <a href="#" data-toggle="modal" data-target="#dlg"></a>
                 </div>
                 <ModalDialog/>
                 <GoogleTag type="remarketing" id="1017172282"/>
@@ -48,9 +51,13 @@ Navbar = React.createClass({
                 <div id="navbar" className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
                         <li role="navigation"><a href="#" data-target="top-page">Trang chủ</a></li>
+                        <li className="divider-vertical"></li>
                         <li role="navigation"><a href="#" data-target="du-hoc-sinh">Du học sinh</a></li>
+                        <li className="divider-vertical"></li>
                         <li role="navigation"><a href="#" data-target="co-hoi-tai-trien-lam">Cơ hội triển lãm</a></li>
+                        <li className="divider-vertical"></li>
                         <li role="navigation"><a href="#" data-target="qua-tang">Quà tặng</a></li>
+                        <li className="divider-vertical"></li>
                         <li role="navigation"><a href="#" data-target="dien-gia-tai-trien-lam">Diễn giả tại triển
                             lãm</a></li>
                     </ul>
@@ -63,9 +70,11 @@ Navbar = React.createClass({
 ButtonRegister = React.createClass({
     displayName: 'Button',
     render(){
-        return <button className="btn btn-register" data-toggle="modal" data-target="#dlg">Đăng ký ngay</button>
+        var _class = (this.props.class) ? this.props.class : 'btn btn-register';
+        return <button className={_class} data-toggle="modal" data-target="#dlg">Đăng ký ngay</button>
     }
-})
+});
+
 
 TopPage = React.createClass({
     displayName: 'TopPage',
@@ -75,7 +84,7 @@ TopPage = React.createClass({
                 <div className="container text-center">
                     <h1 className="top-header">Triển lãm thế giới du học</h1>
 
-                    <h2 className="top-subheader">Cơ hội trong tầm tay</h2>
+                    <h2 className="top-subheader">Cơ hội du học trong tầm tay</h2>
                 </div>
             </div>
         )
@@ -167,6 +176,13 @@ StudyStudents = React.createClass({
                                     Sunrise hướng dẫn chu đáo nên em và bố mẹ cũng cảm thấy yên tâm hơn.Trong suốt 2 năm
                                     vừa qua, bố mẹ em cũng nắm bắt rõ tình hình học tập sinh hoạt của em qua các báo cáo
                                     nhận xét mỗi kì của trường gửi về qua trung tâm.</p>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-lg-12 col-md-12 col-xs-12">
+                                <div className="text-center">
+                                    <ButtonRegister/>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -274,13 +290,6 @@ Talking = React.createClass({
                                 <p className="text-center talking">Minh Phan</p>
 
                                 <p className="text-center talking-info">Giảng viên luyện thi TOEFL iBT</p>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-lg-12 col-md-12 col-xs-12">
-                                <div className="text-center">
-                                    <ButtonRegister/>
-                                </div>
                             </div>
                         </div>
                     </div>
