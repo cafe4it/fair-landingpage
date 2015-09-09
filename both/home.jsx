@@ -26,6 +26,9 @@ Home = React.createClass({
                 </div>
                 <ModalDialog/>
                 <GoogleTag type="remarketing" id="1017172282"/>
+
+                <GoogleTag type="remarketing" id="957099916"/>
+                <FacebookTag type="remarketing" id="546144518867566"/>
             </div>
         )
     }
