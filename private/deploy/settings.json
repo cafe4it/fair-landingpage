@@ -1,7 +1,8 @@
 {
   "public": {
-    "segmentio" : {
-      "token" : "7YJCSA4cbsIrjnDaO8zrAFEMsuzHR2OE"
+    "analyticsSettings": {
+      "Google Analytics" : {"trackingId": "UA-67504902-1"},
+      "Segment.io"       : {"apiKey": "7YJCSA4cbsIrjnDaO8zrAFEMsuzHR2OE"}
     }
   }
 }

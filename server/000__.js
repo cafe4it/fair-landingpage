@@ -1,5 +1,24 @@
 if(Meteor.isServer) {
     //FlowRouter.setDeferScriptLoading(true);
+    Meteor.publish('getRegisters',function(key){
+        var privateKey = '123456978';
+        if(key === privateKey){
+            return Registers.find();
+        }else{
+            return this.ready();
+        }
+    });
+
+    Meteor.publish('getRegistersBy', function(key, params){
+        var privateKey = '123456978';
+        if(key === privateKey){
+            return Registers.find(params);
+        }else{
+            return this.ready();
+        }
+    });
+
+
     Meteor.methods({
         registerFair : function(obj){
             try{

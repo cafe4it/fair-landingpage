@@ -1,10 +1,10 @@
 Registers = new Mongo.Collection('registers');
 
 Meteor.startup(function(){
-    if(Meteor.settings && Meteor.settings.public && Meteor.settings.public.segmentio){
+    /*if(Meteor.settings && Meteor.settings.public && Meteor.settings.public.segmentio){
         var sg = Meteor.settings.public.segmentio;
         analytics.load(sg.token);
-    }
+    }*/
 
 })
 if(Meteor.isClient){
@@ -17,5 +17,5 @@ if(Meteor.isClient){
                 FlowRouter.go('thankyou');
             },500)
         }
-    })
+    });
 }

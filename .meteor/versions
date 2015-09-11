@@ -43,9 +43,9 @@ mobile-status-bar@1.0.3
 momentjs:moment@2.8.4
 mongo@1.1.0
 observe-sequence@1.0.6
+okgrow:analytics@0.3.0
 ordered-dict@1.0.3
 ostrio:cookies@1.0.1
-percolatestudio:segment.io@1.1.1_1
 random@1.0.3
 react@0.1.10
 react-meteor-data@0.1.6

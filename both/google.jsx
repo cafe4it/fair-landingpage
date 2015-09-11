@@ -23,4 +23,4 @@ GoogleTag = React.createClass({
             </div>
         )
     }
-})
+});
