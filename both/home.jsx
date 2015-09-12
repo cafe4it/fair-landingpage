@@ -1,5 +1,13 @@
 Home = React.createClass({
     displayName: 'Home',
+    componentDidMount(){
+        var context = FlowRouter.current();
+        if (context.route && context.route.name) {
+            analytics.page(context.route.name);
+        } else {
+            analytics.page(context.path);
+        }
+    },
     render(){
         var navbar = <Navbar/>,
             toppage = <TopPage/>,

@@ -50,7 +50,7 @@
   "appName": "fair_landing_page",
 
   // Location of app (local directory)
-  "app": "~/Projects/fair-landingpage/",
+  "app": "/D/Projects/fair-landingpage/",
 
   // Configure environment
   "env": {

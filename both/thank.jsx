@@ -1,5 +1,13 @@
 ThankYou = React.createClass({
     displayName : 'ThankYou',
+    componentDidMount(){
+        var context = FlowRouter.current();
+        if (context.route && context.route.name) {
+            analytics.page(context.route.name);
+        } else {
+            analytics.page(context.path);
+        }
+    },
     render(){
         return (
             <div className="container-fluid">
