@@ -34,8 +34,8 @@ if(Meteor.isServer) {
                 });
                 var server = process.env.CLUSTER_BALANCER_URL || process.env.IP_SERVER || process.env.ROOT_URL;
                 obj = _.extend(obj, {Dangkyluc : new Date(), TaiServer : server});
-                Registers.insert(obj);
-                return true;
+                var id = Registers.insert(obj);
+                return id;
             }catch(ex){
                 console.log(ex);
                 return false;

@@ -2,7 +2,7 @@
   "public": {
     "analyticsSettings": {
       "Google Analytics" : {"trackingId": "UA-67504902-1"},
-      "Mixpanel"         : {"token":  "cc914ecdc192d81f6a03e7eb9393e262", "people": false},
+      "Mixpanel"         : {"token":  "cc914ecdc192d81f6a03e7eb9393e262", "people": true},
       "Segment.io"       : {"apiKey": "7YJCSA4cbsIrjnDaO8zrAFEMsuzHR2OE"}
     }
   }
