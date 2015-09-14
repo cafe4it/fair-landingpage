@@ -394,6 +394,7 @@ ModalDialog = React.createClass({
                             Meteor.cookie.set('fair_registered', true);
                             Session.set('done_register', true);
                             analytics.identify(rs,{
+                                name : obj.Hovaten,
                                 fullname : obj.Hovaten,
                                 email : obj.Email,
                                 phone : obj.Sodienthoai
